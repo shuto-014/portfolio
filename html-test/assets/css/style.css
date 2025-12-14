@@ -95,7 +95,7 @@ h1 {
     background-image: url(../images/hero.png);
     background-repeat: no-repeat;
     width: auto;
-    height: auto;
+    height: 800px;
     background-size: cover;
     background-position: center;
 }
