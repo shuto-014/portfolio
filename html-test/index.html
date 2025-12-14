@@ -15,30 +15,43 @@
 </head>
 <body>
 
-    <header>
-        <h1><a href="#"><img src="./assets/images/logo.png" alt="logo" width="180px" height="100px"></a></h1>
-        <div class="nav-right">
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-list"><a href="#" class="link">ホーム</a></li>
-                    <li class="nav-list"><a href="#" class="link">会社概要</a></li>
-                    <li class="nav-list"><a href="#" class="link">事業内容</a></li>
-                    <li class="nav-list"><a href="#" class="link">採用情報</a></li>
-                </ul>
-            </nav>
+<header class="header">
+  <h1 class="logo">
+    <a href="#">
+      <img src="./assets/images/logo.png" alt="logo" width="100px" height="60px">
+    </a>
+  </h1>
 
-            <div class="nav-main">
-                <div class="nav-tel">
-                    <img src="./assets/images/nav-tel.png" alt="tel" width="20px" height="20px">00-0000-0000 
-                </div>
-                <span class="nav-tel1">受付時間9:00 - 18:00 定休：日曜</span>
-            </div>
-            <div class="nav-contact">
-                <img src="./assets/images/mail.png" alt="mail" width="20px" height="18px">お問い合わせ
-            </div>
-        </div>
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    </header>
+  <div class="nav-right" id="nav">
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#">事業内容</a></li>
+        <li><a href="#">採用情報</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-main">
+      <div class="nav-tel">
+        <img src="./assets/images/nav-tel.png" alt="tel" width="20px" height="16px">
+        00-0000-0000
+      </div>
+      <span class="nav-tel1">受付時間9:00 - 18:00</span>
+    </div>
+
+    <div class="nav-contact">
+      <img src="./assets/images/mail.png" alt="mail" width="20px" height="16px">お問い合わせ
+    </div>
+  </div>
+</header>
+
     <section class="hero">
     </section>
 
@@ -127,6 +140,17 @@
         <span class="site">｜<a href="#">サイトマップ</a>｜<a href="#">プライバシーポリシー</a>｜</span><br>
         <small>2025 ALL RIGHTS RESERVED</small>
     </footer>
+
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+    </script>
+
+
 
 </body>
 </html>
