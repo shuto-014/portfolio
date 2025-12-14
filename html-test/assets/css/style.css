@@ -11,6 +11,94 @@ body {
   color: #333;
 } 
 
+/* nav */
+
+header {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-list {
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.link:hover {
+    color: #01a2e8;
+    font-size: 16px;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    width: 240px;
+    height: 100px;
+    color: #333;
+    transition: 0.3s;
+    border-left: 1px solid #ccc;
+    margin-left: 40px;
+}
+
+.nav-tel {
+    display: flex;
+    background-color: #fff;
+    color: #333;
+    font-size: 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.nav-tel1 {
+    font-size: 12px;
+}
+
+.nav-contact {
+    display: flex;
+    background-color: #01a2e8;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+/* hero */
+
+.hero {
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    width: auto;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+}
 
 /* about us */
 
@@ -81,6 +169,7 @@ body {
     display: flex;
     gap: 100px;
     padding-bottom: 100px;
+    align-items: center;
 }
 
 .service-img {
@@ -103,16 +192,15 @@ body {
 }
 
 .service-layout {
-    display: grid;
     padding-left: 20px;
     width: 50%;
-    align-items: center;
 }
 
 .service-script {
     margin: 0;
     line-height: 200%;
-    padding-top: 40px;
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .btn-1 {
@@ -163,7 +251,6 @@ body {
     color: #01a2e8;
     width: 300px;
     height: 68px;
-    /* text-align: center; */
     justify-content: center;
     align-items: center;
     transition: 0.3s;
@@ -203,7 +290,7 @@ body {
 .contact {
     background-image: url(../images/contact.png);
     width: 100%;
-    height: 490px;
+    height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -328,8 +415,184 @@ footer {
 }
 
 .site {
-    display: inline-block;
+    display: inline-flex;
     font-size: 14px;
     padding: 30px 0 10px;
     text-decoration: none;
+    color: #333;
+}
+
+a {
+        text-decoration: none;
+    color: #333;
+}
+
+
+
+/* =========================
+   SP（スマホ）対応
+   ========================= */
+@media screen and (max-width: 768px) {
+
+  /* ===== Base ===== */
+  body {
+    font-size: 14px;
+  }
+
+  /* ===== Header / Nav ===== */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 16px;
+  }
+
+  header h1 img {
+    width: 140px;
+    height: auto;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .nav-main {
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-top: 1px solid #ccc;
+    margin-left: 0;
+    padding: 12px 0;
+  }
+
+  .nav-tel {
+    font-size: 20px;
+  }
+
+  .nav-contact {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    height: 200px;
+    background-image: url(../images/hero-sp.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+  }
+
+  /* ===== About ===== */
+  .about {
+    padding: 40px 16px;
+  }
+
+  .about-main {
+    font-size: 36px;
+  }
+
+  .about-script {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  /* ===== Service ===== */
+  .service-head {
+    margin: 60px 0;
+  }
+
+  .service-main {
+    font-size: 36px;
+  }
+
+  .service-layout-1 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .service-img,
+  .service-layout {
+    width: 100%;
+    padding-left: 20px;
+    height: auto;
+  }
+
+  .service-script {
+    padding-top: 100px;
+  }
+
+  .btn-1 {
+    width: 100%;
+  }
+
+  /* ===== Recruit ===== */
+  .recruit-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 16px;
+  }
+
+  .recruit-img,
+  .recruit-layout {
+    width: 100%;
+  }
+
+  .recruit-main {
+    font-size: 36px;
+  }
+
+  /* ===== Contact ===== */
+  .contact {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .contact-main {
+    font-size: 36px;
+    padding-top: 60px;
+  }
+
+  .btn-style {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 16px;
+  }
+
+  .btn-3,
+  .btn-4 {
+    width: 100%;
+    height: auto;
+    padding: 24px 16px;
+    border-radius: 40px;
+  }
+
+  .btn-tel {
+    font-size: 28px;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    height: auto;
+    padding: 40px 16px;
+  }
+
+  .footer-tittle {
+    font-size: 22px;
+  }
+
+  .site {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
