@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="text text text">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap">
+
+
+    <link rel="stylesheet" href="./assets/css/sanitize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="body">
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="header-inner">
+      <h1 class="sp-logo"><a href="./index.html">ー ESPRESSO ー</a></h1>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="global-nav" id="globalNav">
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./about/index.html" class="nav-link">About</a></li>
+
+          <li><a href="./index.html" class="nav-logo">ー ESPRESSO ー</a></li>
+
+          <li><a href="./menu/index.html" class="nav-link">Menu</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h2 class="hero-title">時間を忘れる、<br class="sp-br">秘密のカフェ</h2>
+      <p class="hero-text">ここにいるだけで、<br class="sp-br">心がゆるむ場所</p>
+    </div>
+  </section>
+
+
+  <!-- ===== About ===== -->
+  <section>
+    <div class="about">
+
+      <div class="about-left">
+        <h2 class="about-title">About us</h2>
+        <p class="about-subtitle">時間を忘れる、秘密のカフェ。</p>
+        <p class="about-text">
+          それは、慌ただしい毎日の中で“ほっとできる瞬間”を届けたいという想いから生まれました。一杯のコーヒーがつなぐ、人と人、そして心。あなたの今日に、やさしいひとときを。
+        </p>
+        <span class="section-btn">
+          <a href="./about/index.html"><span class="btn">詳しく見る</span><img src="./assets/images/btn.png" alt="ボタン"></a>
+        </span>
+      </div>
+
+      <div class="about-right">
+        <img src="./assets/images/about_img.png" alt="Aboutの画像">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ===== menu ===== -->
+  <section>
+    <div class="menu">
+      <div class="menu-left">
+        <img src="./assets/images/menu_img.png" alt="メニュー">
+      </div>
+
+      <div class="menu-right">
+        <h2 class="menu-title">Our menu</h2>
+        <p class="menu-subtitle">「味わう」だけじゃない、「感じる」メニューを。</p>
+        <p class="menu-text">
+          コーヒーで、あなたの時間をデザインします。一杯ごとに変わる香りや温度、カップを持つ指先のぬくもり、そのすべてが、あなただけの物語を紡ぎます。焙煎の深さ、ミルクの柔らかさ、甘さの余韻。五感で味わう体験を、ゆっくりとお楽しみください。
+        </p>
+        <span class="section-btn">
+          <a href="./menu/index.html"><span class="btn">詳しくはこちら</span><img src="./assets/images/btn.png" alt="ボタン"></a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Contact ===== -->
+  <section class="contact-section">
+    <div class="contact">
+      <h2 class="contact-title">Contact</h2>
+      <p class="contact-subtitle">お気軽にお問い合わせください。</p>
+
+      <div class="contact-btn">
+        <div class="contact-left">
+          <a href="tel:0000000000" class="btn-outline">
+            <span class="contact-tel-title">お電話でのお問い合わせ</span>
+            <span class="contact-tel">
+              <img src="./assets/images/nav-tel.png" alt="tel" width="25px" height="25px">00-0000-0000
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-right">
+          <a href="#" class="btn-primary">
+            <span>メールでのお問い合わせ</span>
+            <span>（24時間365日受付）</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p class="footer-logo"><a href="#">ー ESPRESSO ー</a></p>
+    <p class="footer-sitemap">｜　プライバシーポリシー　｜　サイトマップ　｜</p>
+    <div class="icons">
+      <img src="./assets/images/insta.png" alt="インスタグラム">
+      <img src="./assets/images/line.png" alt="ライン">
+      <img src="./assets/images/fb.png" alt="フェイスブック">
+    </div>
+    <small class="footer-copy">© 2025 ALL RIGHTS RESERVED</small>
+  </footer>
+
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('globalNav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('is-open');
+    });
+  </script>
+
+</body>
+
+</html>
